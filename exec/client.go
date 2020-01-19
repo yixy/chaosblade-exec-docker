@@ -347,13 +347,14 @@ func ping(cli *client.Client) (*client.Client, error) {
 }
 
 func getChaosBladeImageRef(repo, version string) string {
-	if repo == "" {
-		repo = DefaultImageRepo
-	}
-	if version == "" {
-		version = ChaosBladeImageVersion
-	}
-	return fmt.Sprintf("%s:%s", repo, version)
+	//if repo == "" {
+	//	repo = DefaultImageRepo
+	//}
+	//if version == "" {
+	//	version = ChaosBladeImageVersion
+	//}
+	//return fmt.Sprintf("%s:%s", repo, version)
+	return "chaos-agent:0.1.3"
 }
 
 // handleResponseResult removes the unused codes in the result
